@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <h1>IMAGE GALLERY</h1>
+            <div class="nav-right">
+                <span>FILTER :</span>
+                <button class="filter-button" data-filter="all">ALL</button>
+                <button class="filter-button" data-filter="camera">CAMERA</button>
+                <button class="filter-button" data-filter="lake">LAKE</button>
+                <button class="filter-button" data-filter="summer">SUMMER</button>
+                <button class="filter-button" data-filter="places">PLACES</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box">
+            <img src="images\camera\cm1.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk1.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm1.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl1.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm2.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk2.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm2.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl2.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm3.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk3.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm3.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl3.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm4.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk4.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm4.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl4.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm5.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk5.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm5.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl5.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm6.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk6.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm6.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl6.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm7.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk7.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm7.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl7.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm8.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk8.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm8.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl8.jpg" alt="place-img" onclick="openPopup(this.src)">
+
+            <img src="images\camera\cm9.jpg" alt="camera-img" onclick="openPopup(this.src)">
+            <img src="images\lake\Lk9.jpg" alt="lake-img" onclick="openPopup(this.src)">
+            <img src="images\summer\sm9.jpg" alt="summer-img" onclick="openPopup(this.src)">
+            <img src="images\places\pl9.jpg" alt="place-img" onclick="openPopup(this.src)">
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+            <button class="arrow-btn prev-btn" onclick="navigate(-1)">&#10094;</button>
+            <img id="popup-img" class="popup-img" src="" alt="">
+            <button class="arrow-btn next-btn" onclick="navigate(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
