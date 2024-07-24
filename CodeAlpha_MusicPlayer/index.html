@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&display=swap">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <span class="material-icons-outlined">keyboard_arrow_down</span>
+            <div class="top">
+                <span class="material-icons-outlined" id="upper">music_note</span>
+                <span id="upper">Now Playing</span>
+            </div>
+            <span class="material-icons-outlined">more_horiz</span>
+        </div>
+
+        <!-- Album -->
+        <div class="info">
+            <img id="albumArt" src="image/img1.jpeg" alt="Album Art" width="200px">
+            <h1 id="trackTitle">Love of My Life</h1>
+            <p id="artist">Ben Lvcas</p>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="progress-bar" id="progressBar">
+            <div class="progress" id="progress" style="width: 0%;"></div>
+            <div class="scrubber"></div>
+            <div class="time-duration">
+                <span class="time-start">0:00</span>
+                <span class="time-end">0:00</span>
+            </div>
+        </div>
+
+        <!-- Music control buttons -->
+        <div class="controls">
+            <span class="material-icons-outlined sfl">shuffle</span>
+            <div class="btns">
+                <span class="material-icons-outlined skip-btn" id="prevBtn">skip_previous</span>
+                <span class="material-icons-outlined pause-btn" id="playPauseBtn">play_arrow</span>
+                <span class="material-icons-outlined skip-btn" id="nextBtn">skip_next</span>
+            </div>
+            <span class="material-icons-outlined que">queue_music</span>
+        </div>
+
+        <!-- Audio elements -->
+        <audio id="audioPlayer" src=""></audio>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
